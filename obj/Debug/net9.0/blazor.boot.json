@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "KelimeEzberApp",
   "resources": {
-    "hash": "sha256-sDVencIuGdUYpcstxzeso7JGIeosa4ARJG8R0cwQxIo=",
+    "hash": "sha256-6OMlnDX+/FFO6LjEYC9/4iL6ZeU8MAHBM4b+S3mhT+I=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.h4ild4sjod.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "KelimeEzberApp.uprjv0ovj9.wasm": "KelimeEzberApp.wasm",
-      "KelimeEzberApp.r0zu324gxi.pdb": "KelimeEzberApp.pdb"
+      "KelimeEzberApp.8ro0h8ytdr.wasm": "KelimeEzberApp.wasm",
+      "KelimeEzberApp.vpryl2ws29.pdb": "KelimeEzberApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.xto5am0qhx.js": "sha256-9e5Vqt0u8nYMGCHU4JfYqrYQExAw3bgi5UYzATgvoJE="
@@ -412,10 +412,10 @@
       "WindowsBase.5f1yvnaer4.wasm": "sha256-sZbAt8RTAmg0USTJj6J32jxvlakGs2AutNm/Bbr5Sc8=",
       "mscorlib.sx4ehutq6w.wasm": "sha256-gLaFs2FD2zCxDmOFrpTh9Y37En7r1yCv1BpjcPkFpgA=",
       "netstandard.ck9kwje9e5.wasm": "sha256-bNmBHwwBfUwMiL+sza9G3xQiNjeEtZksW9XVhj3ravI=",
-      "KelimeEzberApp.uprjv0ovj9.wasm": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+      "KelimeEzberApp.8ro0h8ytdr.wasm": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
     },
     "pdb": {
-      "KelimeEzberApp.r0zu324gxi.pdb": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
+      "KelimeEzberApp.vpryl2ws29.pdb": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
     }
   },
   "cacheBootResources": true,

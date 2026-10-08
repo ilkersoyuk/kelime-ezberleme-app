@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o+Suah0I0Jf+t4LtVe4/AOrd4FrVyuHvFWJU5j21SkQ=",
+  "Hash": "N1GpyK2jjOtDiU5zSczYdke9oKIHWvH1Epim/T9yV/Y=",
   "Source": "KelimeEzberApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "8wj83o86rm",
-      "Integrity": "SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg=",
+      "Fingerprint": "8242h0brhs",
+      "Integrity": "EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "r0zu324gxi",
-      "Integrity": "y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=",
+      "Fingerprint": "vpryl2ws29",
+      "Integrity": "LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\KelimeEzberApp.pdb"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "uprjv0ovj9",
-      "Integrity": "EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=",
+      "Fingerprint": "8ro0h8ytdr",
+      "Integrity": "VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\webcil\\KelimeEzberApp.wasm"
@@ -4301,7 +4301,7 @@
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\webcil\\WindowsBase.wasm"
     },
     {
-      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-jaffx5emdf.gz",
+      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-sx9qhipmfx.gz",
       "SourceId": "KelimeEzberApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\",
@@ -5855,7 +5855,7 @@
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-avdxviqoxd.gz",
+      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-fxuaodpbf9.gz",
       "SourceId": "KelimeEzberApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\",
@@ -5869,8 +5869,8 @@
       "RelatedAsset": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "soevyfbq73",
-      "Integrity": "HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM=",
+      "Fingerprint": "s4wsgqqqvw",
+      "Integrity": "rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build"
@@ -6464,12 +6464,12 @@
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Xml.Linq.wasm"
     },
     {
-      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-r0zu324gxi.gz",
+      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-vpryl2ws29.gz",
       "SourceId": "KelimeEzberApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/KelimeEzberApp#[.{fingerprint=r0zu324gxi}]!.pdb.gz",
+      "RelativePath": "_framework/KelimeEzberApp#[.{fingerprint=vpryl2ws29}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6478,8 +6478,8 @@
       "RelatedAsset": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "40n8w4jcc4",
-      "Integrity": "dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=",
+      "Fingerprint": "ybn1pewdyy",
+      "Integrity": "Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb"
@@ -7745,7 +7745,7 @@
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.wasm"
     },
     {
-      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8wj83o86rm.gz",
+      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8242h0brhs.gz",
       "SourceId": "KelimeEzberApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\",
@@ -7759,8 +7759,8 @@
       "RelatedAsset": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "66bxjvysu8",
-      "Integrity": "zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI=",
+      "Fingerprint": "jx217mpojd",
+      "Integrity": "6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7913,12 +7913,12 @@
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.wasm"
     },
     {
-      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-uprjv0ovj9.gz",
+      "Identity": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-8ro0h8ytdr.gz",
       "SourceId": "KelimeEzberApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/KelimeEzberApp#[.{fingerprint=uprjv0ovj9}]!.wasm.gz",
+      "RelativePath": "_framework/KelimeEzberApp#[.{fingerprint=8ro0h8ytdr}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7927,8 +7927,8 @@
       "RelatedAsset": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5nlq0yaiim",
-      "Integrity": "EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=",
+      "Fingerprint": "neor4h2mgw",
+      "Integrity": "T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.wasm"
@@ -9796,8 +9796,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerManifest",
-      "Fingerprint": "avdxviqoxd",
-      "Integrity": "dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU=",
+      "Fingerprint": "fxuaodpbf9",
+      "Integrity": "7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build"
@@ -9817,8 +9817,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerJs",
-      "Fingerprint": "jaffx5emdf",
-      "Integrity": "K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8=",
+      "Fingerprint": "sx9qhipmfx",
+      "Integrity": "MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "wwwroot\\service-worker.js"
@@ -10999,7 +10999,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg=\""
+          "Value": "\"EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8242h0brhs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081280988"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12302"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg=\""
         },
         {
           "Name": "Last-Modified",
@@ -11008,45 +11047,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8wj83o86rm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000081300813"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12299"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -11062,19 +11062,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg=\""
+          "Value": "W/\"EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg="
+          "Value": "sha256-EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8wj83o86rm.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\njr55hldad-8242h0brhs.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11083,7 +11083,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12299"
+          "Value": "12302"
         },
         {
           "Name": "Content-Type",
@@ -11091,11 +11091,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI=\""
+          "Value": "\"6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 14:42:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11113,7 +11113,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI="
+          "Value": "sha256-6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg="
         }
       ]
     },
@@ -13937,305 +13937,7 @@
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.pdb",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "82424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.pdb",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-r0zu324gxi.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000016630634"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.pdb.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-r0zu324gxi.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "82424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-r0zu324gxi.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000016630634"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-r0zu324gxi.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
       "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14253,11 +13955,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14267,7 +13969,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "label",
@@ -14275,18 +13977,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-uprjv0ovj9.gz",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-8ro0h8ytdr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000019733596"
+          "Quality": "0.000019695120"
         }
       ],
       "ResponseHeaders": [
@@ -14296,15 +13998,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14324,13 +14026,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "W/\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "label",
@@ -14338,13 +14040,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-uprjv0ovj9.gz",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-8ro0h8ytdr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14353,7 +14055,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -14361,11 +14063,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14383,7 +14085,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "label",
@@ -14391,7 +14093,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y="
+          "Value": "sha256-T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.pdb",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.pdb",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-vpryl2ws29.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000016578799"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.pdb.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-vpryl2ws29.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\bin\\Debug\\net9.0\\wwwroot\\_framework\\KelimeEzberApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-vpryl2ws29.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000016578799"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\ffb4nkrwsu-vpryl2ws29.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA="
         }
       ]
     },
@@ -14414,11 +14414,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14428,18 +14428,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
       "Route": "_framework/KelimeEzberApp.wasm",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-uprjv0ovj9.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-8ro0h8ytdr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000019733596"
+          "Quality": "0.000019695120"
         }
       ],
       "ResponseHeaders": [
@@ -14449,15 +14449,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14477,19 +14477,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "W/\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
       "Route": "_framework/KelimeEzberApp.wasm.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-uprjv0ovj9.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\oga7fdtsao-8ro0h8ytdr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14498,7 +14498,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -14506,11 +14506,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14528,7 +14528,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y="
+          "Value": "sha256-T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8="
         }
       ]
     },
@@ -87574,12 +87574,12 @@
     },
     {
       "Route": "service-worker-assets.js",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-avdxviqoxd.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-fxuaodpbf9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077845244"
+          "Quality": "0.000077833126"
         }
       ],
       "ResponseHeaders": [
@@ -87589,15 +87589,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12845"
+          "Value": "12847"
         },
         {
           "Name": "ETag",
-          "Value": "\"HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM=\""
+          "Value": "\"rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -87617,13 +87617,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU=\""
+          "Value": "W/\"7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU="
+          "Value": "sha256-7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc="
         }
       ]
     },
@@ -87646,11 +87646,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU=\""
+          "Value": "\"7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -87660,13 +87660,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU="
+          "Value": "sha256-7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc="
         }
       ]
     },
     {
       "Route": "service-worker-assets.js.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-avdxviqoxd.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\c45j3lixuq-fxuaodpbf9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -87675,7 +87675,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12845"
+          "Value": "12847"
         },
         {
           "Name": "Content-Type",
@@ -87683,11 +87683,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM=\""
+          "Value": "\"rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -87705,13 +87705,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM="
+          "Value": "sha256-rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU="
         }
       ]
     },
     {
       "Route": "service-worker.js",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-jaffx5emdf.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-sx9qhipmfx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -87734,7 +87734,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -87754,13 +87754,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8=\""
+          "Value": "W/\"MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8="
+          "Value": "sha256-MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k="
         }
       ]
     },
@@ -87783,7 +87783,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8=\""
+          "Value": "\"MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k=\""
         },
         {
           "Name": "Last-Modified",
@@ -87797,13 +87797,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8="
+          "Value": "sha256-MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k="
         }
       ]
     },
     {
       "Route": "service-worker.js.gz",
-      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-jaffx5emdf.gz",
+      "AssetFile": "C:\\Users\\İlker Söyük\\Desktop\\kelime ezberleme app\\obj\\Debug\\net9.0\\compressed\\0eeq4vl0n5-sx9qhipmfx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -87824,7 +87824,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Cache-Control",

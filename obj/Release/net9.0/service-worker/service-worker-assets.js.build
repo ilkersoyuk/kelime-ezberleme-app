@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "hfKwIOFA",
+  "version": "iLOhLN9p",
   "assets": [
     {
       "hash": "sha256-N411ySuAxw6QNxpPlNV1CA9yi2ao/KgdS+Pos1q8DrU=",
@@ -14,12 +14,12 @@ self.assetsManifest = {
       "url": "KelimeEzberApp.styles.css"
     },
     {
-      "hash": "sha256-t4DDnaN+1kODnuzo0QyuBlqzA5xk93Fl7WnDfEmP2GA=",
-      "url": "_framework/KelimeEzberApp.hir8isgg2q.pdb"
+      "hash": "sha256-bnOL2Xi1wtL4Z/7KWY62x5HMH2LoyvXR1Z0BP2YZAmU=",
+      "url": "_framework/KelimeEzberApp.6zevzv5cxb.wasm"
     },
     {
-      "hash": "sha256-sQDWT402gDMaUWotRMGFAA9SWjf6x4YX4JVa6Iyttbg=",
-      "url": "_framework/KelimeEzberApp.xw57j9vpz4.wasm"
+      "hash": "sha256-K7fXbOkznztyvVhu3f35pvpap7c/NVRfvx6SfkRatxU=",
+      "url": "_framework/KelimeEzberApp.ji9wjrokgh.pdb"
     },
     {
       "hash": "sha256-N6/4dp+rtuEu+iWs7ZZs30QrZzpGpF9KC6ulCWZCo2w=",
@@ -778,7 +778,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.5f1yvnaer4.wasm"
     },
     {
-      "hash": "sha256-r7NC2rxZ3bH4io1wCofCCnDGVYbGPp7KFFU47jgpsj4=",
+      "hash": "sha256-8mpexZe3prYVXY3hCu5r0T4IziIl23iNuedC/EMS02g=",
       "url": "_framework/blazor.boot.json"
     },
     {

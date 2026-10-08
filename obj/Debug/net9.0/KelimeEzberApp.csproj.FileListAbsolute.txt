@@ -15,8 +15,6 @@ C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_f
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.r0zu324gxi.pdb
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.uprjv0ovj9.wasm
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.9at76jd5um.wasm
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.h4ild4sjod.wasm
@@ -286,7 +284,6 @@ C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_f
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.4483uwth6m.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.Net.WebClient.zrkvk3qd8b.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.Xml.Linq.0hav8pqi5i.wasm.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.r0zu324gxi.pdb.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.IO.Compression.gx08j0cpc9.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\netstandard.ck9kwje9e5.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Json.fanayclfog.wasm.gz
@@ -347,7 +344,6 @@ C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_f
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.Console.1jk7ogtq8x.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.IO.Compression.FileSystem.ix3m39qp15.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Registry.0oj6yc9093.wasm.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.uprjv0ovj9.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.ComponentModel.x06ag4zpt3.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.Primitives.9h5umqupoc.wasm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Primitives.ppgurk2br2.wasm.gz
@@ -1072,9 +1068,6 @@ C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\rocciiv23v-tjcz0u77k5.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\jyejs2u4g0-tptq2av103.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\v1qxayq6hm-lfu7j35m59.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\oga7fdtsao-uprjv0ovj9.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\ffb4nkrwsu-r0zu324gxi.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\njr55hldad-8wj83o86rm.gz
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1099,5 +1092,13 @@ C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\dist\wwwro
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\dist\wwwroot\sample-data\weather.json
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\dist\wwwroot\_framework\blazor.boot.json
 C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\ncrhfq4kng-o7bbcw82em.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\0eeq4vl0n5-jaffx5emdf.gz
-C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\c45j3lixuq-avdxviqoxd.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.vpryl2ws29.pdb
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.8ro0h8ytdr.wasm
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.vpryl2ws29.pdb.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\bin\Debug\net9.0\wwwroot\_framework\KelimeEzberApp.8ro0h8ytdr.wasm.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\KelimeEzberApp.sourcelink.json
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\oga7fdtsao-8ro0h8ytdr.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\ffb4nkrwsu-vpryl2ws29.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\njr55hldad-8242h0brhs.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\0eeq4vl0n5-sx9qhipmfx.gz
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\obj\Debug\net9.0\compressed\c45j3lixuq-fxuaodpbf9.gz

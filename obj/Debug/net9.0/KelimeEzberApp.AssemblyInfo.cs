@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KelimeEzberApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a776e83aeb8e95fb0c8dc98766162d497eae2521")]
 [assembly: System.Reflection.AssemblyProductAttribute("KelimeEzberApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KelimeEzberApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

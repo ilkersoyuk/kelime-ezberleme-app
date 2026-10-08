@@ -681,306 +681,8 @@
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.pdb",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "82424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.pdb",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000016630634"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.pdb.gz",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "82424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000016630634"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y3ehCBwOwYBky/zk06shBCee7fRKs/sP8w211g3C4bw="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "AssetFile": "_framework/KelimeEzberApp.r0zu324gxi.pdb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r0zu324gxi"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dAaKnGFEFr1/wcsCMqlmVfQsC55sijTDkafmvJjwo3Y="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/KelimeEzberApp.pdb.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1001,21 +703,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         },
         {
           "Name": "label",
@@ -1024,13 +726,13 @@
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000019733596"
+          "Quality": "0.000019695120"
         }
       ],
       "ResponseHeaders": [
@@ -1048,7 +750,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -1056,15 +758,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "W/\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -1074,11 +776,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         },
         {
           "Name": "label",
@@ -1087,8 +789,8 @@
       ]
     },
     {
-      "Route": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
+      "Route": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1105,7 +807,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -1113,11 +815,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -1127,11 +829,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uprjv0ovj9"
+          "Value": "8ro0h8ytdr"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y="
+          "Value": "sha256-T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8="
         },
         {
           "Name": "label",
@@ -1140,8 +842,306 @@
       ]
     },
     {
+      "Route": "_framework/KelimeEzberApp.pdb",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.pdb",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000016578799"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.pdb.gz",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000016578799"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LcIQBTF649ay7zsJtRVhHXB/3NOUr55yrpfaXfVhnKY="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "AssetFile": "_framework/KelimeEzberApp.vpryl2ws29.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vpryl2ws29"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xh0M3Al9kNUu764kWc6ZI6ra8nsmhii7RgzWgm7/bDA="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/KelimeEzberApp.pdb.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/KelimeEzberApp.wasm",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1162,28 +1162,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:46 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:10 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
       "Route": "_framework/KelimeEzberApp.wasm",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000019733596"
+          "Quality": "0.000019695120"
         }
       ],
       "ResponseHeaders": [
@@ -1201,7 +1201,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -1209,15 +1209,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4=\""
+          "Value": "W/\"VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -1227,13 +1227,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EtIClapnntF2RFDGRP1fNp5BNIIF5B2h202If856bs4="
+          "Value": "sha256-VK5/J02l9fdK3EzKM8oa9fO9n+WuvcppBAULBKggifc="
         }
       ]
     },
     {
       "Route": "_framework/KelimeEzberApp.wasm.gz",
-      "AssetFile": "_framework/KelimeEzberApp.uprjv0ovj9.wasm.gz",
+      "AssetFile": "_framework/KelimeEzberApp.8ro0h8ytdr.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1250,7 +1250,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50674"
+          "Value": "50773"
         },
         {
           "Name": "Content-Type",
@@ -1258,11 +1258,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y=\""
+          "Value": "\"T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:36:47 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -1272,7 +1272,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EditCozcsQUBL0O/PKd9I69AbvrvTFxWt4zwHKJcl+Y="
+          "Value": "sha256-T7yWuLrdjNkdNUcs/Onvh+4ArwRddIhScoQ0T+kC6n8="
         }
       ]
     },
@@ -57621,17 +57621,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg=\""
+          "Value": "\"EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:42:10 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg="
+          "Value": "sha256-EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE="
         }
       ]
     },
@@ -57642,7 +57642,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081300813"
+          "Quality": "0.000081280988"
         }
       ],
       "ResponseHeaders": [
@@ -57660,7 +57660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12299"
+          "Value": "12302"
         },
         {
           "Name": "Content-Type",
@@ -57668,15 +57668,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI=\""
+          "Value": "\"6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg=\""
+          "Value": "W/\"EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 14:42:10 GMT"
         },
         {
           "Name": "Vary",
@@ -57686,7 +57686,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SKZsU9o9MJTHulv8mKIiCduWnDRD3S3ppri4Y3tkNfg="
+          "Value": "sha256-EKI8rcyVRsAvCU3BFAv1zMtlfS2SOtKGKzK/1qd01dE="
         }
       ]
     },
@@ -57709,7 +57709,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12299"
+          "Value": "12302"
         },
         {
           "Name": "Content-Type",
@@ -57717,11 +57717,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI=\""
+          "Value": "\"6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 14:42:10 GMT"
         },
         {
           "Name": "Vary",
@@ -57731,7 +57731,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zqXlf/NdeiB5XPxquwzmKkdQ4tVcv/d5Ty/f32R6OxI="
+          "Value": "sha256-6SvcthMqAXXWGnPrRGf7O+3Rc8XZnmj37s6JXJpL8Rg="
         }
       ]
     },
@@ -76303,7 +76303,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077845244"
+          "Quality": "0.000077833126"
         }
       ],
       "ResponseHeaders": [
@@ -76321,7 +76321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12845"
+          "Value": "12847"
         },
         {
           "Name": "Content-Type",
@@ -76329,15 +76329,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM=\""
+          "Value": "\"rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU=\""
+          "Value": "W/\"7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -76347,7 +76347,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU="
+          "Value": "sha256-7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc="
         }
       ]
     },
@@ -76374,17 +76374,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU=\""
+          "Value": "\"7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dmuEFJOz3khL4XeiwY9baa6XdCo5HP8pjzpDShIyOkU="
+          "Value": "sha256-7Yg+M/Tgs0+U8eY5IjGQy65s1wo7vOyW8kK+zbFzLSc="
         }
       ]
     },
@@ -76407,7 +76407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12845"
+          "Value": "12847"
         },
         {
           "Name": "Content-Type",
@@ -76415,11 +76415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM=\""
+          "Value": "\"rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -76429,7 +76429,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HIqYuiNHdkcM6bB0zHU67oKAWTfmzlrgBE1eLcdyfxM="
+          "Value": "sha256-rGlsXGZUbAsCJ8s20QwwcTFsi30FXbbu3N+/84Pc3iU="
         }
       ]
     },
@@ -76470,11 +76470,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8=\""
+          "Value": "W/\"MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
@@ -76484,7 +76484,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8="
+          "Value": "sha256-MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k="
         }
       ]
     },
@@ -76511,7 +76511,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8=\""
+          "Value": "\"MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k=\""
         },
         {
           "Name": "Last-Modified",
@@ -76521,7 +76521,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K1AjL6AG8AAFdmrlMsIMRck0DCsbqS62NSxpszLFNl8="
+          "Value": "sha256-MAKlL3B67X/ZCgWiDQ1OZ3GWAsY3k2iywdKoS854/5k="
         }
       ]
     },
@@ -76556,7 +76556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 Oct 2026 14:39:49 GMT"
+          "Value": "Thu, 08 Oct 2026 15:11:11 GMT"
         },
         {
           "Name": "Vary",
