@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -32,10 +32,11 @@ jobs:
       - name: Publish Blazor WebAssembly
         run: dotnet publish KelimeEzberApp.csproj -c Release -o output
 
-      - name: Fix base href for GitHub Pages subfolder
+      - name: Fix base href for GitHub Pages subfolder & SPA routing
         run: |
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          sed -i "s|<base href=\"/\" />|<base href=\"/$REPO_NAME/\" />|g" output/wwwroot/index.html
+          sed -i 's|<base href="/" />|<base href="/kelime-ezberleme-app/" />|g' output/wwwroot/index.html
+          cp output/wwwroot/index.html output/wwwroot/404.html
+          touch output/wwwroot/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
