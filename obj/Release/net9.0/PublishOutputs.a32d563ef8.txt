@@ -1,0 +1,6 @@
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\dist\web.config
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\dist\KelimeEzberApp.staticwebassets.endpoints.json
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\dist\wwwroot\data\words.json
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\dist\wwwroot\sample-data\weather.json
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\dist\wwwroot\_framework\blazor.boot.json
+C:\Users\İlker Söyük\Desktop\kelime ezberleme app\dist\web.config

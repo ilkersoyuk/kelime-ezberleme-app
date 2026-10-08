@@ -1,0 +1,180 @@
+@page "/"
+@inject NavigationManager Navigation
+@inject IGamificationService Gamification
+@inject IWordService WordService
+@implements IDisposable
+
+<!-- Welcome & Motivation Card -->
+<div class="card-box" style="background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #fff; border: none; margin-bottom: 12px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <div style="font-size: 16px; font-weight: 800;">Hoş Geldin 👋</div>
+            <div style="font-size: 11px; opacity: 0.8; margin-top: 3px;">Nasıl başlarsan öyle gider...</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.15); padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 800;">
+            @DateTime.Today.ToString("dd MMMM yyyy")
+        </div>
+    </div>
+</div>
+
+<!-- Home Grid Navigation Cards -->
+<div class="home-grid">
+    <div class="home-card-btn" @onclick='() => Navigation.NavigateTo("/cards")'>
+        <div class="card-icon" style="background: #eef2ff;">🗂️</div>
+        <b>Kelime Kartları</b>
+        <span>Çevir, Dinle, Ezberle</span>
+    </div>
+    <div class="home-card-btn" @onclick='() => Navigation.NavigateTo("/quiz")'>
+        <div class="card-icon" style="background: #ecfdf5;">🎯</div>
+        <b>Test & Quiz</b>
+        <span>4 Şıklı Hızlı Test</span>
+    </div>
+    <div class="home-card-btn" @onclick='() => Navigation.NavigateTo("/match")'>
+        <div class="card-icon" style="background: #fffbeb;">🧩</div>
+        <b>Eşleştirme</b>
+        <span>Hafıza & Hız Modu</span>
+    </div>
+    <div class="home-card-btn" @onclick='() => Navigation.NavigateTo("/missions")'>
+        <div class="card-icon" style="background: #fdf2f8;">🏆</div>
+        <b>Görev & Rozet</b>
+        <span>XP Kazan, Seviye Atla</span>
+    </div>
+</div>
+
+<!-- Today's Activity Card -->
+<div class="card-box">
+    <div class="card-title-sm">
+        <span>🔥 Bugün Neler Yaptın?</span>
+        <span style="color: var(--primary); font-weight: 800;">@Gamification.Profile.WordsReviewedToday Kelime</span>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 6px;">
+        <div style="background: #f8fafc; border: 1px solid var(--line); border-radius: 14px; padding: 10px; text-align: center;">
+            <div style="font-size: 18px; font-weight: 900; color: #2563eb;">@Gamification.Profile.WordsReviewedToday</div>
+            <div style="font-size: 10px; color: var(--mute); font-weight: 700; margin-top: 2px;">Kart Tekrarı</div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--line); border-radius: 14px; padding: 10px; text-align: center;">
+            <div style="font-size: 18px; font-weight: 900; color: #059669;">@Gamification.Profile.CorrectAnswersToday / @Gamification.Profile.QuizzesSolvedToday</div>
+            <div style="font-size: 10px; color: var(--mute); font-weight: 700; margin-top: 2px;">Quiz Başarısı</div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--line); border-radius: 14px; padding: 10px; text-align: center;">
+            <div style="font-size: 18px; font-weight: 900; color: #d97706;">@Gamification.Profile.StreakDays</div>
+            <div style="font-size: 10px; color: var(--mute); font-weight: 700; margin-top: 2px;">Günlük Seri 🔥</div>
+        </div>
+    </div>
+</div>
+
+<!-- Word Mastery Distribution Overview -->
+<div class="card-box">
+    <div class="card-title-sm">
+        <span>📊 Genel Kelime Durumu</span>
+        <span>@_masteredCount / @WordService.AllWords.Count Tamamlandı</span>
+    </div>
+
+    <!-- Progress Stacked Bar -->
+    <div style="height: 10px; background: #e2e8f0; border-radius: 10px; overflow: hidden; display: flex; margin-bottom: 12px;">
+        <div style="width: @(_masteredPercent.ToString("F0"))%; background: #10b981;" title="Ezberlendi"></div>
+        <div style="width: @(_learningPercent.ToString("F0"))%; background: #3b82f6;" title="Öğreniliyor"></div>
+        <div style="width: @(_reviewPercent.ToString("F0"))%; background: #f43f5e;" title="Tekrar Gereken"></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
+            <span>Ezberlenen:</span>
+            <span style="color: #059669; margin-left: auto;">@_masteredCount</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; display: inline-block;"></span>
+            <span>Öğrenilen:</span>
+            <span style="color: #2563eb; margin-left: auto;">@_learningCount</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #f43f5e; display: inline-block;"></span>
+            <span>Tekrar Bekleyen:</span>
+            <span style="color: #e11d48; margin-left: auto;">@_reviewCount</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #cbd5e1; display: inline-block;"></span>
+            <span>Henüz Bakılmayan:</span>
+            <span style="color: var(--mute); margin-left: auto;">@_newCount</span>
+        </div>
+    </div>
+</div>
+
+<!-- Featured / Daily Word Card -->
+@if (_featuredWord != null)
+{
+    <div class="card-box" style="border-color: #cbd5e1;">
+        <div class="card-title-sm">
+            <span>💡 Günün Öne Çıkan Kelimesi</span>
+            <button type="button" class="audio-speak-btn" style="width: 32px; height: 32px; font-size: 15px;" @onclick="() => WordService.SpeakAsync(_featuredWord.Word)">🔊</button>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+                <span style="font-size: 24px; font-weight: 900; color: var(--ink);">@_featuredWord.Word</span>
+                @if (!string.IsNullOrWhiteSpace(_featuredWord.Pronunciation))
+                {
+                    <span style="font-size: 12px; color: #6366f1; background: #eef2ff; padding: 2px 8px; border-radius: 12px; margin-left: 8px;">/@_featuredWord.Pronunciation/</span>
+                }
+            </div>
+            <span style="font-size: 10px; font-weight: 800; background: #f1f5f9; padding: 4px 8px; border-radius: 8px; color: var(--mute);">@_featuredWord.ListName</span>
+        </div>
+        
+        <div style="font-size: 15px; font-weight: 700; color: #059669; margin-bottom: 6px;">@_featuredWord.Meaning</div>
+        @if (!string.IsNullOrWhiteSpace(_featuredWord.Details) && _featuredWord.Details != _featuredWord.Meaning)
+        {
+            <div style="font-size: 12px; color: #64748b; background: #f8fafc; padding: 8px 12px; border-radius: 10px; line-height: 1.4;">
+                @_featuredWord.Details
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private int _masteredCount;
+    private int _learningCount;
+    private int _reviewCount;
+    private int _newCount;
+    private double _masteredPercent;
+    private double _learningPercent;
+    private double _reviewPercent;
+    private WordItem? _featuredWord;
+
+    protected override void OnInitialized()
+    {
+        Gamification.OnStateChanged += RefreshStats;
+        WordService.OnWordsUpdated += RefreshStats;
+        RefreshStats();
+    }
+
+    private void RefreshStats()
+    {
+        var words = WordService.AllWords;
+        _masteredCount = words.Count(w => w.Status == WordStatus.Mastered);
+        _learningCount = words.Count(w => w.Status == WordStatus.Learning);
+        _reviewCount = words.Count(w => w.Status == WordStatus.Review);
+        _newCount = words.Count(w => w.Status == WordStatus.New);
+
+        int total = words.Count > 0 ? words.Count : 1;
+        _masteredPercent = (double)_masteredCount / total * 100;
+        _learningPercent = (double)_learningCount / total * 100;
+        _reviewPercent = (double)_reviewCount / total * 100;
+
+        if (_featuredWord == null && words.Count > 0)
+        {
+            // Pick word of day based on day of year
+            int seed = DateTime.Today.DayOfYear % words.Count;
+            _featuredWord = words[seed];
+        }
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Gamification.OnStateChanged -= RefreshStats;
+        WordService.OnWordsUpdated -= RefreshStats;
+    }
+}

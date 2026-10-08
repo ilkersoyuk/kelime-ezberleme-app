@@ -1,0 +1,229 @@
+@page "/dictionary"
+@inject IWordService WordService
+@inject IGamificationService Gamification
+@inject IJSRuntime JS
+@implements IDisposable
+
+<div class="card-box" style="padding: 14px; margin-bottom: 12px;">
+    <!-- Search Bar -->
+    <div style="position: relative; margin-bottom: 10px;">
+        <input type="text" placeholder="🔍 Kelime veya Türkçe anlam ara..." @bind="_searchText" @bind:event="oninput" @bind:after="ApplyFilters" style="padding-left: 36px;" />
+        <span style="position: absolute; left: 12px; top: 12px; font-size: 15px; color: var(--mute);">🔍</span>
+        @if (!string.IsNullOrEmpty(_searchText))
+        {
+            <button type="button" @onclick="ClearSearch" style="position: absolute; right: 12px; top: 10px; background: none; border: none; font-size: 16px; color: var(--mute); cursor: pointer;">✕</button>
+        }
+    </div>
+
+    <!-- Filter Selectors -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;">
+        <select @bind="_selectedList" @bind:after="OnListChanged" style="font-size: 12px; padding: 7px 10px;">
+            <option value="all">Tüm Listeler (2124)</option>
+            <option value="zafer1124">Zafer Hoca (1124)</option>
+            <option value="yds1000">YDS Sık Çıkanlar (1000)</option>
+        </select>
+
+        <select @bind="_selectedUnit" @bind:after="ApplyFilters" style="font-size: 12px; padding: 7px 10px;">
+            <option value="0">Tüm Üniteler</option>
+            @foreach (var u in _availableUnits)
+            {
+                <option value="@u">Ünite @u</option>
+            }
+        </select>
+    </div>
+
+    <!-- Status Tabs -->
+    <div class="sub-tabs" style="margin-bottom: 0;">
+        <button type="button" class="sub-tab @(_statusFilter == null && !_onlyFavorites ? "active" : "")" @onclick="() => SetStatus(null, false)">Tümü</button>
+        <button type="button" class="sub-tab @(_onlyFavorites ? "active" : "")" @onclick="() => SetStatus(null, true)">⭐ Favoriler</button>
+        <button type="button" class="sub-tab @(_statusFilter == WordStatus.Learning ? "active" : "")" @onclick="() => SetStatus(WordStatus.Learning, false)">Öğrenilen</button>
+        <button type="button" class="sub-tab @(_statusFilter == WordStatus.Mastered ? "active" : "")" @onclick="() => SetStatus(WordStatus.Mastered, false)">Ezberlenen</button>
+        <button type="button" class="sub-tab @(_statusFilter == WordStatus.Review ? "active" : "")" @onclick="() => SetStatus(WordStatus.Review, false)">Tekrar</button>
+    </div>
+</div>
+
+<!-- Results Header -->
+<div style="padding: 0 16px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 700; color: var(--mute);">
+    <span>Bulunan: @_filteredWords.Count Kelime</span>
+    @if (_filteredWords.Count > 100)
+    {
+        <span style="font-size: 11px;">(İlk 100 kelime listeleniyor)</span>
+    }
+</div>
+
+<!-- Word List -->
+<div style="padding: 0 14px; display: flex; flex-direction: column; gap: 8px;">
+    @foreach (var word in _filteredWords.Take(100))
+    {
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <b style="font-size: 16px; color: var(--ink);">@word.Word</b>
+                        <button type="button" class="audio-speak-btn" style="width: 28px; height: 28px; font-size: 13px; box-shadow: none;" @onclick="() => WordService.SpeakAsync(word.Word)">🔊</button>
+                        @if (!string.IsNullOrWhiteSpace(word.Pronunciation))
+                        {
+                            <span style="font-size: 11px; color: #6366f1; background: #eef2ff; padding: 2px 6px; border-radius: 8px;">/@word.Pronunciation/</span>
+                        }
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 6px;">
+                    <button type="button" @onclick="() => ToggleFavorite(word)" style="background: none; border: none; font-size: 18px; cursor: pointer;">
+                        @(word.IsFavorite ? "⭐" : "☆")
+                    </button>
+                    <button type="button" @onclick="() => OpenWordDetail(word)" style="background: #f1f5f9; border: none; border-radius: 8px; padding: 4px 8px; font-size: 11px; font-weight: 700; color: var(--mute); cursor: pointer;">
+                        Detay ℹ️
+                    </button>
+                </div>
+            </div>
+
+            <div style="font-size: 13px; font-weight: 700; color: #059669;">
+                @word.Meaning
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 6px; margin-top: 2px;">
+                <span style="font-size: 10px; font-weight: 700; color: var(--mute);">
+                    #@word.OriginalNumber • @word.ListName • Ünite @word.Unit
+                </span>
+
+                <div style="display: flex; gap: 4px;">
+                    <button type="button" style="font-size: 10px; font-weight: 800; border-radius: 8px; padding: 3px 8px; border: none; cursor: pointer; background: @(word.Status == WordStatus.Learning ? "var(--primary)" : "#f1f5f9"); color: @(word.Status == WordStatus.Learning ? "#fff" : "var(--mute)");" @onclick="() => SetWordStatus(word, WordStatus.Learning)">
+                        Öğreniliyor
+                    </button>
+                    <button type="button" style="font-size: 10px; font-weight: 800; border-radius: 8px; padding: 3px 8px; border: none; cursor: pointer; background: @(word.Status == WordStatus.Mastered ? "var(--emerald)" : "#f1f5f9"); color: @(word.Status == WordStatus.Mastered ? "#fff" : "var(--mute)");" @onclick="() => SetWordStatus(word, WordStatus.Mastered)">
+                        Ezberlendi
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Word Detail Modal -->
+@if (_detailWord != null)
+{
+    <div style="position: fixed; inset: 0; background: rgba(15,23,42,0.65); backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 18px;">
+        <div style="background: #fff; border-radius: 22px; padding: 22px; max-width: 440px; width: 100%; box-shadow: var(--shadow-lg);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase;">
+                    #@_detailWord.OriginalNumber • @_detailWord.ListName
+                </span>
+                <button type="button" @onclick="CloseDetail" style="background: none; border: none; font-size: 18px; cursor: pointer; color: var(--mute);">✕</button>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <h3 style="font-size: 24px; font-weight: 900; color: var(--ink);">@_detailWord.Word</h3>
+                <button type="button" class="audio-speak-btn" style="width: 34px; height: 34px; font-size: 15px;" @onclick="() => WordService.SpeakAsync(_detailWord.Word)">🔊</button>
+            </div>
+
+            @if (!string.IsNullOrWhiteSpace(_detailWord.Pronunciation))
+            {
+                <div style="font-size: 13px; color: #6366f1; background: #eef2ff; display: inline-block; padding: 3px 10px; border-radius: 12px; margin-bottom: 12px;">
+                    Okunuş: /@_detailWord.Pronunciation/
+                </div>
+            }
+
+            <div style="font-size: 16px; font-weight: 800; color: #059669; margin-bottom: 12px;">
+                @_detailWord.Meaning
+            </div>
+
+            @if (!string.IsNullOrWhiteSpace(_detailWord.Details))
+            {
+                <div style="background: #f8fafc; border: 1px solid var(--line); border-radius: 14px; padding: 12px; font-size: 13px; color: #334155; line-height: 1.5; margin-bottom: 16px;">
+                    <b>Detay / Eş Anlamlılar:</b><br />
+                    @_detailWord.Details
+                </div>
+            }
+
+            <div style="display: flex; gap: 8px;">
+                <button type="button" class="btn-secondary" @onclick="() => ToggleFavorite(_detailWord)">
+                    @(_detailWord.IsFavorite ? "⭐ Favoriden Çıkar" : "⭐ Favoriye Ekle")
+                </button>
+                <button type="button" class="btn-primary" @onclick="CloseDetail">Tamam</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private string _searchText = "";
+    private string _selectedList = "all";
+    private int _selectedUnit = 0;
+    private WordStatus? _statusFilter = null;
+    private bool _onlyFavorites = false;
+
+    private List<int> _availableUnits = new();
+    private List<WordItem> _filteredWords = new();
+    private WordItem? _detailWord = null;
+
+    protected override void OnInitialized()
+    {
+        WordService.OnWordsUpdated += OnWordsChanged;
+        OnListChanged();
+    }
+
+    private void OnListChanged()
+    {
+        _availableUnits = WordService.GetAvailableUnits(_selectedList);
+        _selectedUnit = 0;
+        ApplyFilters();
+    }
+
+    private void ApplyFilters()
+    {
+        _filteredWords = WordService.FilterWords(
+            listId: _selectedList == "all" ? null : _selectedList,
+            unit: _selectedUnit > 0 ? _selectedUnit : null,
+            status: _statusFilter,
+            onlyFavorites: _onlyFavorites ? true : null,
+            search: _searchText
+        );
+    }
+
+    private void SetStatus(WordStatus? status, bool favorites)
+    {
+        _statusFilter = status;
+        _onlyFavorites = favorites;
+        ApplyFilters();
+    }
+
+    private void ClearSearch()
+    {
+        _searchText = "";
+        ApplyFilters();
+    }
+
+    private async Task ToggleFavorite(WordItem word)
+    {
+        await WordService.ToggleFavoriteAsync(word);
+        ApplyFilters();
+    }
+
+    private async Task SetWordStatus(WordItem word, WordStatus status)
+    {
+        await WordService.UpdateWordStatusAsync(word, status);
+        ApplyFilters();
+    }
+
+    private void OpenWordDetail(WordItem word)
+    {
+        _detailWord = word;
+    }
+
+    private void CloseDetail()
+    {
+        _detailWord = null;
+    }
+
+    private void OnWordsChanged()
+    {
+        ApplyFilters();
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        WordService.OnWordsUpdated -= OnWordsChanged;
+    }
+}

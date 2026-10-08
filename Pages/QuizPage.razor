@@ -1,0 +1,330 @@
+@page "/quiz"
+@inject IWordService WordService
+@inject IGamificationService Gamification
+@inject IJSRuntime JS
+
+@if (!_isTestActive && !_isTestFinished)
+{
+    <!-- Quiz Setup Screen -->
+    <div class="card-box">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 42px; margin-bottom: 8px;">🎯</div>
+            <h2 style="font-size: 20px; font-weight: 800; color: var(--ink);">YDS Kelime Quizi</h2>
+            <p style="font-size: 12px; color: var(--mute);">Doğru bildiğin her soru için +12 XP kazan!</p>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+            <label style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 5px; display: block;">KELİME KAYNAĞI</label>
+            <select @bind="_selectedList" @bind:after="OnListChanged">
+                <option value="zafer1124">Zafer Hoca Çıkmış (1124)</option>
+                <option value="yds1000">YDS Sık Çıkanlar (1000)</option>
+                <option value="all">Tüm Kelimeler (2124)</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+            <label style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 5px; display: block;">ÜNİTE SEÇİMİ</label>
+            <select @bind="_selectedUnit">
+                <option value="0">Tüm Ünitelerden Karışık</option>
+                @foreach (var u in _availableUnits)
+                {
+                    <option value="@u">Ünite @u (@((u-1)*50 + 1) - @(u*50))</option>
+                }
+            </select>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+            <label style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 5px; display: block;">SORU SAYISI</label>
+            <div class="sub-tabs" style="margin-bottom: 0;">
+                <button type="button" class="sub-tab @(_questionCount == 5 ? "active" : "")" @onclick="() => _questionCount = 5">5 Soru</button>
+                <button type="button" class="sub-tab @(_questionCount == 10 ? "active" : "")" @onclick="() => _questionCount = 10">10 Soru</button>
+                <button type="button" class="sub-tab @(_questionCount == 20 ? "active" : "")" @onclick="() => _questionCount = 20">20 Soru</button>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 5px; display: block;">SORU TİPİ</label>
+            <div class="sub-tabs" style="margin-bottom: 0;">
+                <button type="button" class="sub-tab @(_questionType == "en_tr" ? "active" : "")" @onclick='() => _questionType = "en_tr"'>İngilizce ➔ Türkçe</button>
+                <button type="button" class="sub-tab @(_questionType == "tr_en" ? "active" : "")" @onclick='() => _questionType = "tr_en"'>Türkçe ➔ İngilizce</button>
+            </div>
+        </div>
+
+        <button type="button" class="btn-primary" @onclick="StartQuiz">
+            Quize Başla 🚀 (Max +@(_questionCount * 12) XP)
+        </button>
+    </div>
+}
+else if (_isTestActive && _currentQuestion != null)
+{
+    <!-- Active Quiz Question Screen -->
+    <div style="padding: 0 16px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 12px; font-weight: 700; color: var(--mute);">
+            Soru @(_currentQuestionIndex + 1) / @_questions.Count
+        </span>
+        <div style="display: flex; gap: 10px; font-size: 12px; font-weight: 800;">
+            <span style="color: #059669;">✅ @_correctCount</span>
+            <span style="color: #e11d48;">❌ @_wrongCount</span>
+        </div>
+    </div>
+
+    <div style="height: 6px; background: #e2e8f0; border-radius: 10px; margin: 0 14px 14px; overflow: hidden;">
+        <div style="height: 100%; width: @(((double)(_currentQuestionIndex + 1) / _questions.Count * 100).ToString("F0"))%; background: var(--primary); border-radius: 10px; transition: width 0.2s ease;"></div>
+    </div>
+
+    <div class="card-box">
+        <div style="text-align: center; padding: 14px 0 20px;">
+            <div style="font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">
+                @_currentQuestion.QuestionPrompt
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <h3 style="font-size: 26px; font-weight: 900; color: var(--ink);">
+                    @_currentQuestion.QuestionText
+                </h3>
+                @if (_currentQuestion.IsEnglishToTurkish)
+                {
+                    <button type="button" class="audio-speak-btn" style="width: 34px; height: 34px; font-size: 15px;" @onclick="() => WordService.SpeakAsync(_currentQuestion.TargetWord.Word)">
+                        🔊
+                    </button>
+                }
+            </div>
+
+            @if (!string.IsNullOrWhiteSpace(_currentQuestion.TargetWord.Pronunciation) && _currentQuestion.IsEnglishToTurkish)
+            {
+                <div style="font-size: 12px; color: #6366f1; margin-top: 4px;">/@_currentQuestion.TargetWord.Pronunciation/</div>
+            }
+        </div>
+
+        <!-- 4 Options -->
+        <div style="margin-top: 10px;">
+            @for (int i = 0; i < _currentQuestion.Options.Count; i++)
+            {
+                var opt = _currentQuestion.Options[i];
+                var isSelected = _currentQuestion.SelectedAnswer == opt;
+                var isCorrectOpt = opt == _currentQuestion.CorrectAnswer;
+                
+                string btnClass = "quiz-option-btn";
+                if (_currentQuestion.IsAnswered == true)
+                {
+                    if (isCorrectOpt)
+                    {
+                        btnClass += " correct";
+                    }
+                    else if (isSelected && !isCorrectOpt)
+                    {
+                        btnClass += " wrong";
+                    }
+                }
+
+                <button type="button" class="@btnClass" disabled="@(_currentQuestion.IsAnswered == true)" @onclick="() => SelectAnswer(opt)">
+                    <span style="display: flex; align-items: center; gap: 8px;">
+                        <span style="font-size: 12px; font-weight: 800; color: var(--mute); background: #f1f5f9; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;">
+                            @((char)('A' + i))
+                        </span>
+                        <span>@opt</span>
+                    </span>
+                    @if (_currentQuestion.IsAnswered == true)
+                    {
+                        if (isCorrectOpt)
+                        {
+                            <span>✓</span>
+                        }
+                        else if (isSelected)
+                        {
+                            <span>✕</span>
+                        }
+                    }
+                </button>
+            }
+        </div>
+
+        <!-- Feedback & Next Button -->
+        @if (_currentQuestion.IsAnswered == true)
+        {
+            <div style="margin-top: 14px; animation: fadeIn 0.2s ease;">
+                <div style="padding: 12px; border-radius: 12px; background: @(_currentQuestion.IsCorrect ? "var(--emerald-subtle)" : "var(--rose-subtle)"); border: 1px solid @(_currentQuestion.IsCorrect ? "var(--emerald-line)" : "var(--rose-line)"); margin-bottom: 12px;">
+                    <div style="font-size: 13px; font-weight: 800; color: @(_currentQuestion.IsCorrect ? "var(--emerald)" : "var(--rose)");">
+                        @(_currentQuestion.IsCorrect ? "Harika! Doğru Cevap 🎉 (+12 XP)" : "Yanlış Cevap 💡")
+                    </div>
+                    <div style="font-size: 12px; color: #475569; margin-top: 3px;">
+                        <b>@_currentQuestion.TargetWord.Word:</b> @_currentQuestion.TargetWord.Meaning
+                    </div>
+                </div>
+
+                <button type="button" class="btn-primary" @onclick="NextQuestion">
+                    @(_currentQuestionIndex < _questions.Count - 1 ? "Sonraki Soru ➡️" : "Sonuçları Gör 📊")
+                </button>
+            </div>
+        }
+    </div>
+}
+else if (_isTestFinished)
+{
+    <!-- Quiz Result Screen -->
+    <div class="card-box" style="text-align: center; padding: 24px 20px;">
+        <div style="font-size: 52px; margin-bottom: 8px;">
+            @(_correctCount >= _questions.Count * 0.8 ? "🏆" : _correctCount >= _questions.Count * 0.5 ? "👍" : "💪")
+        </div>
+        
+        <h2 style="font-size: 22px; font-weight: 900; color: var(--ink); margin-bottom: 4px;">Quiz Tamamlandı!</h2>
+        <p style="font-size: 12px; color: var(--mute); margin-bottom: 20px;">İşte bu testteki başarın:</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 20px;">
+            <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 14px; padding: 12px;">
+                <div style="font-size: 24px; font-weight: 900; color: #059669;">@_correctCount</div>
+                <div style="font-size: 10px; font-weight: 800; color: #059669; margin-top: 2px;">DOĞRU</div>
+            </div>
+            <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 14px; padding: 12px;">
+                <div style="font-size: 24px; font-weight: 900; color: #e11d48;">@_wrongCount</div>
+                <div style="font-size: 10px; font-weight: 800; color: #e11d48; margin-top: 2px;">YANLIŞ</div>
+            </div>
+            <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; padding: 12px;">
+                <div style="font-size: 24px; font-weight: 900; color: #2563eb;">%@((int)((double)_correctCount / _questions.Count * 100))</div>
+                <div style="font-size: 10px; font-weight: 800; color: #2563eb; margin-top: 2px;">BAŞARI</div>
+            </div>
+        </div>
+
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 14px; padding: 12px; margin-bottom: 20px; font-size: 13px; font-weight: 800; color: #b45309;">
+            Toplam Kazanılan: +@(_earnedXp) XP ⚡
+        </div>
+
+        @if (_wrongWords.Count > 0)
+        {
+            <div style="text-align: left; margin-bottom: 20px;">
+                <div style="font-size: 12px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 8px;">
+                    YANLIŞ YAPILAN KELİMELER (@_wrongWords.Count)
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    @foreach (var w in _wrongWords)
+                    {
+                        <div style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;">
+                            <div>
+                                <b style="font-size: 13px; color: var(--ink);">@w.Word</b>
+                                <div style="font-size: 11px; color: var(--mute);">@w.Meaning</div>
+                            </div>
+                            <button type="button" class="btn-secondary" style="width: auto; padding: 5px 10px; font-size: 11px;" @onclick="() => ToggleFavoriteFromSummary(w)">
+                                @(w.IsFavorite ? "⭐ Eklendi" : "+ Favorile")
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+        <div style="display: flex; gap: 10px;">
+            <button type="button" class="btn-secondary" @onclick="ResetQuiz">Yeni Quiz 🔄</button>
+            <button type="button" class="btn-primary" @onclick="StartQuiz">Tekrar Çöz 🚀</button>
+        </div>
+    </div>
+}
+
+@code {
+    private string _selectedList = "zafer1124";
+    private int _selectedUnit = 0;
+    private int _questionCount = 10;
+    private string _questionType = "en_tr";
+    private List<int> _availableUnits = new();
+
+    private bool _isTestActive = false;
+    private bool _isTestFinished = false;
+
+    private List<QuizQuestion> _questions = new();
+    private QuizQuestion? _currentQuestion;
+    private int _currentQuestionIndex = 0;
+    private int _correctCount = 0;
+    private int _wrongCount = 0;
+    private int _earnedXp = 0;
+    private List<WordItem> _wrongWords = new();
+
+    protected override void OnInitialized()
+    {
+        OnListChanged();
+    }
+
+    private void OnListChanged()
+    {
+        _availableUnits = WordService.GetAvailableUnits(_selectedList);
+        _selectedUnit = 0;
+    }
+
+    private void StartQuiz()
+    {
+        bool enToTr = _questionType == "en_tr";
+        _questions = WordService.GenerateQuiz(
+            listId: _selectedList,
+            count: _questionCount,
+            unit: _selectedUnit > 0 ? _selectedUnit : null,
+            englishToTurkish: enToTr
+        );
+
+        if (_questions.Count == 0) return;
+
+        _currentQuestionIndex = 0;
+        _currentQuestion = _questions[0];
+        _correctCount = 0;
+        _wrongCount = 0;
+        _earnedXp = 0;
+        _wrongWords.Clear();
+        _isTestActive = true;
+        _isTestFinished = false;
+    }
+
+    private async Task SelectAnswer(string selected)
+    {
+        if (_currentQuestion == null || _currentQuestion.IsAnswered == true) return;
+
+        _currentQuestion.SelectedAnswer = selected;
+        bool isCorrect = _currentQuestion.IsCorrect;
+
+        if (isCorrect)
+        {
+            _correctCount++;
+            _earnedXp += 12;
+            _currentQuestion.TargetWord.CorrectCount++;
+        }
+        else
+        {
+            _wrongCount++;
+            _earnedXp += 2;
+            _currentQuestion.TargetWord.WrongCount++;
+            if (!_wrongWords.Contains(_currentQuestion.TargetWord))
+            {
+                _wrongWords.Add(_currentQuestion.TargetWord);
+            }
+        }
+
+        try
+        {
+            await JS.InvokeVoidAsync("appJs.triggerAnswerVibration", isCorrect);
+        }
+        catch { }
+
+        await Gamification.TrackQuizAnswerAsync(isCorrect);
+    }
+
+    private void NextQuestion()
+    {
+        if (_currentQuestionIndex < _questions.Count - 1)
+        {
+            _currentQuestionIndex++;
+            _currentQuestion = _questions[_currentQuestionIndex];
+        }
+        else
+        {
+            _isTestActive = false;
+            _isTestFinished = true;
+        }
+    }
+
+    private async Task ToggleFavoriteFromSummary(WordItem word)
+    {
+        await WordService.ToggleFavoriteAsync(word);
+    }
+
+    private void ResetQuiz()
+    {
+        _isTestActive = false;
+        _isTestFinished = false;
+    }
+}

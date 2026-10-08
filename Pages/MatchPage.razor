@@ -1,0 +1,141 @@
+@page "/match"
+@inject IWordService WordService
+@inject IGamificationService Gamification
+@inject IJSRuntime JS
+
+<div class="card-box" style="margin-bottom: 12px; padding: 14px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--ink);">🧩 Hızlı Eşleştirme</h3>
+            <p style="font-size: 11px; color: var(--mute);">Kelimeleri anlamlarıyla doğru eşleştir</p>
+        </div>
+        <button type="button" class="btn-secondary" style="width: auto; padding: 6px 12px; font-size: 11px;" @onclick="StartNewRound">
+            Yenile 🔄
+        </button>
+    </div>
+</div>
+
+@if (_matchedCount >= 5)
+{
+    <div class="card-box" style="text-align: center; padding: 32px 20px;">
+        <div style="font-size: 48px; margin-bottom: 8px;">🎉</div>
+        <h3 style="font-size: 20px; font-weight: 900; color: var(--ink);">Mükemmel Eşleştirme!</h3>
+        <p style="font-size: 13px; color: var(--mute); margin-bottom: 16px;">Tüm çiftleri başarıyla tamamladın.</p>
+        <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 14px; padding: 12px; font-size: 14px; font-weight: 800; color: #059669; margin-bottom: 20px;">
+            +30 XP Kazanıldı ⚡
+        </div>
+        <button type="button" class="btn-primary" @onclick="StartNewRound">Sonraki 5 Kelime 🚀</button>
+    </div>
+}
+else
+{
+    <div class="card-box">
+        <div style="display: flex; justify-content: space-between; font-size: 11px; font-weight: 800; color: var(--mute); text-transform: uppercase; margin-bottom: 10px;">
+            <span>İNGİLİZCE KELİMELER</span>
+            <span>TÜRKÇE KARŞILIKLARI</span>
+        </div>
+
+        <div class="match-grid">
+            <!-- Left Column: English Words -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                @foreach (var w in _enWords)
+                {
+                    bool isMatched = _matchedIds.Contains(w.Id);
+                    bool isSelected = _selectedEnId == w.Id;
+                    <button type="button" class="match-box @(isMatched ? "matched" : "") @(isSelected ? "selected" : "")" @onclick="() => SelectEn(w.Id)">
+                        @w.Word
+                    </button>
+                }
+            </div>
+
+            <!-- Right Column: Turkish Meanings -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                @foreach (var w in _trWords)
+                {
+                    bool isMatched = _matchedIds.Contains(w.Id);
+                    bool isSelected = _selectedTrId == w.Id;
+                    <button type="button" class="match-box @(isMatched ? "matched" : "") @(isSelected ? "selected" : "")" @onclick="() => SelectTr(w.Id)" style="font-size: 12px; line-height: 1.2;">
+                        @w.Meaning
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<WordItem> _enWords = new();
+    private List<WordItem> _trWords = new();
+    private HashSet<int> _matchedIds = new();
+    private int? _selectedEnId;
+    private int? _selectedTrId;
+    private int _matchedCount => _matchedIds.Count;
+
+    protected override void OnInitialized()
+    {
+        StartNewRound();
+    }
+
+    private void StartNewRound()
+    {
+        _matchedIds.Clear();
+        _selectedEnId = null;
+        _selectedTrId = null;
+
+        var game = WordService.GenerateMatchGame("zafer1124", 5);
+        _enWords = game.EnglishSide;
+        _trWords = game.TurkishSide;
+    }
+
+    private async Task SelectEn(int id)
+    {
+        if (_matchedIds.Contains(id)) return;
+        _selectedEnId = id;
+        await CheckMatch();
+    }
+
+    private async Task SelectTr(int id)
+    {
+        if (_matchedIds.Contains(id)) return;
+        _selectedTrId = id;
+        await CheckMatch();
+    }
+
+    private async Task CheckMatch()
+    {
+        if (_selectedEnId.HasValue && _selectedTrId.HasValue)
+        {
+            if (_selectedEnId.Value == _selectedTrId.Value)
+            {
+                // Match!
+                _matchedIds.Add(_selectedEnId.Value);
+                _selectedEnId = null;
+                _selectedTrId = null;
+                try
+                {
+                    await JS.InvokeVoidAsync("appJs.triggerAnswerVibration", true);
+                }
+                catch { }
+
+                await Gamification.AddXpAsync(6, "Kelime Eşleştirme Başarısı");
+
+                if (_matchedCount >= 5)
+                {
+                    await Gamification.AddXpAsync(20, "Eşleştirme Turu Tamamlandı");
+                }
+            }
+            else
+            {
+                // Wrong Match
+                try
+                {
+                    await JS.InvokeVoidAsync("appJs.triggerAnswerVibration", false);
+                }
+                catch { }
+                await Task.Delay(300);
+                _selectedEnId = null;
+                _selectedTrId = null;
+            }
+        }
+    }
+}

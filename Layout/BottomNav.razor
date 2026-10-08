@@ -1,0 +1,62 @@
+@inject NavigationManager Navigation
+
+<nav class="bottom-nav">
+    <button type="button" class="nav-tab @(IsActive("/") ? "active" : "")" @onclick='() => NavigateTo("/")'>
+        <span class="tab-icon">🏠</span>
+        <span>Ana Sayfa</span>
+    </button>
+    
+    <button type="button" class="nav-tab @(IsActive("/cards") ? "active" : "")" @onclick='() => NavigateTo("/cards")'>
+        <span class="tab-icon">🗂️</span>
+        <span>Kartlar</span>
+    </button>
+    
+    <button type="button" class="nav-tab @(IsActive("/quiz") ? "active" : "")" @onclick='() => NavigateTo("/quiz")'>
+        <span class="tab-icon">🎯</span>
+        <span>Test</span>
+    </button>
+    
+    <button type="button" class="nav-tab @(IsActive("/missions") ? "active" : "")" @onclick='() => NavigateTo("/missions")'>
+        <span class="tab-icon">🏆</span>
+        <span>Görevler</span>
+    </button>
+    
+    <button type="button" class="nav-tab @(IsActive("/dictionary") ? "active" : "")" @onclick='() => NavigateTo("/dictionary")'>
+        <span class="tab-icon">📖</span>
+        <span>Sözlük</span>
+    </button>
+
+    <button type="button" class="nav-tab @(IsActive("/backup") ? "active" : "")" @onclick='() => NavigateTo("/backup")'>
+        <span class="tab-icon">💾</span>
+        <span>Yedek</span>
+    </button>
+</nav>
+
+@code {
+    private string _currentUri = "";
+
+    protected override void OnInitialized()
+    {
+        _currentUri = Navigation.ToBaseRelativePath(Navigation.Uri);
+        Navigation.LocationChanged += (s, e) =>
+        {
+            _currentUri = Navigation.ToBaseRelativePath(e.Location);
+            StateHasChanged();
+        };
+    }
+
+    private bool IsActive(string path)
+    {
+        var clean = path.TrimStart('/');
+        if (string.IsNullOrEmpty(clean))
+        {
+            return string.IsNullOrEmpty(_currentUri);
+        }
+        return _currentUri.StartsWith(clean, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private void NavigateTo(string path)
+    {
+        Navigation.NavigateTo(path);
+    }
+}

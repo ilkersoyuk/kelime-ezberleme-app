@@ -1,0 +1,96 @@
+@inherits LayoutComponentBase
+@inject IGamificationService Gamification
+@inject IWordService WordService
+@implements IDisposable
+
+<div class="app-container">
+    <!-- Top Header -->
+    <header class="app-header">
+        <div class="header-top">
+            <div class="app-brand">
+                <div class="brand-icon">📚</div>
+                <div>
+                    <h1 class="app-title">Kelime Ezber</h1>
+                    <div class="app-subtitle">YDS & YÖKDİL Hazırlık</div>
+                </div>
+            </div>
+            <div class="streak-pill">
+                <span>🔥</span>
+                <span>@Gamification.Profile.StreakDays Gün</span>
+            </div>
+        </div>
+
+        <!-- Level & XP Box -->
+        <div class="header-level-box">
+            <div class="level-row">
+                <span class="level-title">@UserProfile.GetRankTitle(Gamification.Profile.Level)</span>
+                <span class="xp-text">Lv. @Gamification.Profile.Level • @Gamification.GetCurrentLevelXp() / @Gamification.GetXpRequiredForNextLevel() XP</span>
+            </div>
+            <div class="xp-bar-track">
+                <div class="xp-bar-fill" style="width: @(Gamification.GetLevelProgressPercentage().ToString("F0"))%;"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="fade-in">
+        @Body
+    </main>
+
+    <!-- Floating Navigation Bar -->
+    <BottomNav />
+
+    <!-- Level Up Modal Pop-up -->
+    @if (_showLevelUpModal)
+    {
+        <div style="position: fixed; inset: 0; background: rgba(15,23,42,0.75); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 20px;">
+            <div style="background: #fff; border-radius: 24px; padding: 28px 24px; max-width: 360px; width: 100%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); animation: scaleUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);">
+                <div style="font-size: 56px; margin-bottom: 8px;">🎉</div>
+                <h3 style="font-size: 22px; font-weight: 900; color: #0f172a; margin-bottom: 6px;">TEBRİKLER!</h3>
+                <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">Seviye Atladın!</p>
+                <div style="background: #eef2ff; border: 1.5px solid #c7d2fe; border-radius: 16px; padding: 12px; margin-bottom: 20px;">
+                    <div style="font-size: 13px; font-weight: 700; color: #4338ca;">YENİ SEVİYEN</div>
+                    <div style="font-size: 28px; font-weight: 900; color: #1e1b4b; margin: 2px 0;">Seviye @_newLevel</div>
+                    <div style="font-size: 14px; font-weight: 800; color: #4f46e5;">@_newRank</div>
+                </div>
+                <button type="button" class="btn-primary" @onclick="CloseLevelUpModal">Harika, Devam Et! 🚀</button>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private bool _showLevelUpModal = false;
+    private int _newLevel = 1;
+    private string _newRank = "";
+
+    protected override void OnInitialized()
+    {
+        Gamification.OnStateChanged += OnGamificationChanged;
+        Gamification.OnLevelUp += HandleLevelUp;
+    }
+
+    private void OnGamificationChanged()
+    {
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void HandleLevelUp(int level, string rank)
+    {
+        _newLevel = level;
+        _newRank = rank;
+        _showLevelUpModal = true;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void CloseLevelUpModal()
+    {
+        _showLevelUpModal = false;
+    }
+
+    public void Dispose()
+    {
+        Gamification.OnStateChanged -= OnGamificationChanged;
+        Gamification.OnLevelUp -= HandleLevelUp;
+    }
+}
